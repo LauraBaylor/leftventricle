@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script type="module"
-    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
-  </script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    model-viewer {
+      width: 100vw;
+      height: 100vh;
+      background-color: white;
+    }
+  </style>
 </head>
 
 <body>
-
-<model-viewer
-  src="left ventrical -zoom.glb"
-  poster="poster (3).webp"
-  camera-controls
-  autoplay
-  shadow-intensity="1"
-  style="width:100%; height:100vh;">
-
-</model-viewer>
-
-
+  <model-viewer
+    src="left ventrical - zoom.glb"
+    ar
+    ar-modes="webxr scene-viewer quick-look"
+    camera-controls
+    tone-mapping="neutral"
+    poster="poster (3).webp"
+    shadow-intensity="1"
+    autoplay
+    camera-orbit="-14.62deg 76.62deg 0.2738m"
+    field-of-view="17.9deg">
+  </model-viewer>
 </body>
 </html>
